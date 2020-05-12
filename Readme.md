@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Pavel Iugai](https://up.htmlacademy.ru/htmlcss/28/user/1462123).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
