@@ -25,57 +25,54 @@
     <h1 class="visually-hidden">Гостиницы</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
-      <!-- Add form -->
-      <form action="">
-        <form action="#" method="get">
-          <fieldset>
-            <legend>Инфраструктура</legend>
-            <label>
-              <input type="checkbox" name="area" checked value="Бассейн">
-              Бассейн
-            </label>
-            <label>
-              <input type="checkbox" name="area" value="Парковка">
-              Парковка
-            </label>
-            <label>
-              <input type="checkbox" name="area" value="Wi-Fi">
-              Wi-Fi
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend>Тип Жилья</legend>
-            <label>
-              <input type="checkbox" name="area" checked value="Гостиница">
-              Гостиница
-            </label>
-            <label>
-              <input type="checkbox" name="area" checked value="Мотель">
-              Мотель
-            </label>
-            <label>
-              <input type="checkbox" name="area" checked value="Апартаменты">
-              Апартаменты
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки <span>(P)</span>:</legend>
-            <label>
-              <span class="visually-hidden">от</span>
-              <input type="text" placeholder="от 0" value="0">
-            </label>
-            <label>
-              <span class="visually-hidden">до</span>
-              <input type="text" placeholder="до 3000" value="300">
-            </label>
-            <label>
-              <input type="range" min="0" max="100" value="40" data-popup-enabled="true" data-show-value="true">
-            </label>
-          </fieldset>
-          <button type="submit">
-            Показать
-          </button>
-        </form>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Инфраструктура</legend>
+          <label>
+            <input type="checkbox" name="area" checked value="Бассейн">
+            Бассейн
+          </label>
+          <label>
+            <input type="checkbox" name="area" value="Парковка">
+            Парковка
+          </label>
+          <label>
+            <input type="checkbox" name="area" value="Wi-Fi">
+            Wi-Fi
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Тип Жилья</legend>
+          <label>
+            <input type="checkbox" name="area" checked value="Гостиница">
+            Гостиница
+          </label>
+          <label>
+            <input type="checkbox" name="area" checked value="Мотель">
+            Мотель
+          </label>
+          <label>
+            <input type="checkbox" name="area" checked value="Апартаменты">
+            Апартаменты
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки <span>(P)</span>:</legend>
+          <label>
+            <span class="visually-hidden">от</span>
+            <input type="text" placeholder="от 0" value="0">
+          </label>
+          <label>
+            <span class="visually-hidden">до</span>
+            <input type="text" placeholder="до 3000" value="300">
+          </label>
+          <label>
+            <input type="range" min="0" max="100" value="40" data-popup-enabled="true" data-show-value="true">
+          </label>
+        </fieldset>
+        <button type="submit">
+          Показать
+        </button>
       </form>
     </section>
     <section class="sort-hotels">
@@ -85,8 +82,10 @@
       <h2 class="visually-hidden">Каталог</h2>
       <ul class="catalog-list">
         <li class="catalog-list-item">
-          <div class="hotel-info">
+          <div class="hotel-image">
             <img src="https://picsum.photos/135/90" alt="">
+          </div>
+          <div class="hotel-info">
             <h3>
               <a href="#">Amara Resort & SPA</a>
             </h3>
@@ -100,8 +99,10 @@
           </div>
         </li>
         <li class="catalog-list-item">
-          <div class="hotel-info">
+          <div class="hotel-image">
             <img src="https://picsum.photos/135/90" alt="">
+          </div>
+          <div class="hotel-info">
             <h3>
               <a href="#">Desert Quail INN</a>
             </h3>
@@ -115,8 +116,10 @@
           </div>
         </li>
         <li class="catalog-list-item">
-          <div class="hotel-info">
+          <div class="hotel-image">
             <img src="https://picsum.photos/135/90" alt="">
+          </div>
+          <div class="hotel-info">
             <h3>
               <a href="#">Villas at Poco Diablo</a>
             </h3>
