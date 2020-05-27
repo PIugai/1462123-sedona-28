@@ -2,7 +2,7 @@
 
 /* Import custom fonts */
 @font-face {
-    font-family: 'ptsans';
+    font-family: 'PT Sans';
     src: url('../fonts/ptsans.woff2') format('woff2'),
          url('../fonts/ptsans.woff') format('woff');
     font-weight: normal;
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: 'ptsans_bold';
+    font-family: 'PT Sans';
     src: url('../fonts/ptsansbold.woff2') format('woff2'),
          url('../fonts/ptsansbold.woff') format('woff');
     font-weight: bold;
@@ -35,8 +35,7 @@
     --special-hovered: #604E43;
     --special-clicked: #503E33;
 
-    --ptsans : "ptsans", Arial, sans-serif;
-    --ptsans-bold: "ptsans_bold", Arial, sans-serif;
+    --ptsans : "PT Sans", Arial, sans-serif;
 }
 
 /* Global */
@@ -69,7 +68,7 @@ body {
 /* Main navigation */
 
 .navigation {
-    font-family: var(--ptsans-bold);
+    font-family: var(--ptsans);
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
@@ -100,7 +99,8 @@ body {
 
 /* Promo */
 .definition {
-    font-family: var(--ptsans-bold);
+    font-family: var(--ptsans);
+    font-weight: bold;
     font-size: 21px;
     line-height: 26px;
 }
@@ -117,7 +117,8 @@ body {
 }
 
 .info h4 {
-    font-family: var(--ptsans-bold);
+    font-family: var(--ptsans);
+    font-weight: bold;
     font-size: 21px;
 }
 
@@ -130,7 +131,8 @@ body {
 /* Footer */
 
 .contacts a {
-    font-family: var(--ptsans-bold);
+    font-family: var(--ptsans);
+    font-weight: bold;
     font-size: 21px;
     color: black;
     line-height: 26px;
@@ -157,7 +159,8 @@ body {
 
 /* Catalog */
 .catalog h3 {
-    font-family: var(--ptsans-bold);
+    font-family: var(--ptsans);
+    font-weight: bold;
     font-size: 21;
 }
 
@@ -191,45 +194,45 @@ body {
     list-style: none;
 }
 
-.catalog-item__info h3 a {
+.item-info__link {
     color: var(--basic-black);
 }
 
-.catalog-item__info h3 a:hover {
+.item-info__link:hover {
     color: var(--basic-blue);
 }
 
-.catalog-item__info h3 a:active {
+.item-info__link:active {
     color: var(--basic-black);
     opacity: 0.3;
 }
 
-.details-btn {
+.item-info__details {
     color: var(--basic-white);
     background-color: var(--basic-blue);
     padding: 3px 16px;
 }
 
-.details-btn:hover {
+.item-info__details:hover {
     background-color: var(--basic-blue-hovered);
 }
 
-.details-btn:active {
+.item-info__details:active {
     background-color: var(--basic-blue-clicked);
     color: rgba(255, 255, 255, 0.3);
 }
 
-.book-btn {
+.item-info__book {
     color: var(--basic-white);
     background-color: var(--special);
     padding: 3px 16px;
 }
 
-.book-btn:hover {
+.item-info__book:hover {
     background-color: var(--special-hovered);
 }
 
-.book-btn:active {
+.item-info__book:active {
     background-color: var(--special-clicked);
     color: rgba(255, 255, 255, 0.3);
 }
