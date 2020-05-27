@@ -1,0 +1,267 @@
+/* Styles for "index.html" */
+
+/* Import custom fonts */
+@font-face {
+    font-family: 'ptsans';
+    src: url('../fonts/ptsans.woff2') format('woff2'),
+         url('../fonts/ptsans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ptsans_bold';
+    src: url('../fonts/ptsansbold.woff2') format('woff2'),
+         url('../fonts/ptsansbold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Variables */
+:root {
+    --basic-white: #ffffff;
+    --basic-white-disabled: #6A6A6A;
+    --basic-black: #000000;
+    --basic-blue: #81B3D2;
+    --basic-blue-hovered: #669EC0;
+    --basic-blue-clicked: #5496BD;
+    --basic-grey: #EEEEEE;
+    --basic-extra-grey: #F2F2F2;
+    --basic-extra-grey-hovered: #EBEBEB;
+    --basic-extra-grey-focused: #E5E5E5;
+
+
+    --special: #766357;
+    --special-hovered: #604E43;
+    --special-clicked: #503E33;
+
+    --ptsans : "ptsans", Arial, sans-serif;
+    --ptsans-bold: "ptsans_bold", Arial, sans-serif;
+}
+
+/* Global */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ptsans);
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* Index Page */
+/* Main navigation */
+
+.navigation {
+    font-family: var(--ptsans-bold);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: var(--basic-white);
+  }
+
+
+.menu {
+    list-style: none;
+}
+
+.menu a {
+    color: var(--basic-black);
+}
+
+.menu a:hover {
+    color: var(--basic-blue);
+}
+
+.menu a:active {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.menu a:focus {
+    color: var(--special);
+}
+
+/* Promo */
+.definition {
+    font-family: var(--ptsans-bold);
+    font-size: 21px;
+    line-height: 26px;
+}
+
+/* Info */
+
+.fact-info,
+.feature-list__item {
+    text-align: center;
+}
+
+.feature-list {
+    list-style: none;
+}
+
+.info h4 {
+    font-family: var(--ptsans-bold);
+    font-size: 21px;
+}
+
+/* Location */
+
+.location {
+    display: none;
+}
+
+/* Footer */
+
+.contacts a {
+    font-family: var(--ptsans-bold);
+    font-size: 21px;
+    color: black;
+    line-height: 26px;
+}
+
+.contacts a:hover {
+    color: var(--basic-blue);
+}
+
+.contacts a:active {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.contacts a:focus {
+    color: var(--special);
+}
+
+/* Hotels Page */
+/* Filters */
+.filters {
+    display: none;
+}
+
+/* Catalog */
+.catalog h3 {
+    font-family: var(--ptsans-bold);
+    font-size: 21;
+}
+
+.sort-links {
+    list-style: none;
+}
+
+.sort-links a {
+    color: var(--basic-black);
+    opacity: 0.3;
+    border-bottom: 1px dotted var(--basic-blue);
+}
+
+.sort-links a:hover {
+    color: var(--basic-blue);
+    border-bottom: 1px dotted var(--basic-blue);
+}
+
+.sort-links a:active {
+    color: var(--basic-black);
+    border-bottom: 1px dotted var(--basic-blue);
+}
+
+.sort-links a:focus {
+    color: var(--basic-blue);
+    border-bottom: none;
+}
+
+/* Catalog List */
+.catalog__list {
+    list-style: none;
+}
+
+.catalog-item__info h3 a {
+    color: var(--basic-black);
+}
+
+.catalog-item__info h3 a:hover {
+    color: var(--basic-blue);
+}
+
+.catalog-item__info h3 a:active {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.details-btn {
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+    padding: 3px 16px;
+}
+
+.details-btn:hover {
+    background-color: var(--basic-blue-hovered);
+}
+
+.details-btn:active {
+    background-color: var(--basic-blue-clicked);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.book-btn {
+    color: var(--basic-white);
+    background-color: var(--special);
+    padding: 3px 16px;
+}
+
+.book-btn:hover {
+    background-color: var(--special-hovered);
+}
+
+.book-btn:active {
+    background-color: var(--special-clicked);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Visually Hidden */
+.visually-hidden {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
