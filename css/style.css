@@ -30,7 +30,8 @@
     --basic-extra-grey: #F2F2F2;
     --basic-extra-grey-hovered: #EBEBEB;
     --basic-extra-grey-focused: #E5E5E5;
-
+    --special-grey: #BDBBBC;
+    --no-fill: transparent;
 
     --special: #766357;
     --special-hovered: #604E43;
@@ -125,7 +126,8 @@ body {
 
 /* Location */
 
-.location h3, p {
+.location h3,
+.location p {
     text-align: center;
 }
 
@@ -143,11 +145,11 @@ body {
     padding: 30px 125px;
 }
 
-.location > a:hover {
+.location a:hover {
     background: var(--special-hovered);
 }
 
-.location > a:active {
+.location a:active {
     background: var(--special-clicked);
     color: var(--basic-white-active);
 }
@@ -198,7 +200,7 @@ body {
 }
 
 .location__map {
-    padding: 300px;
+    background-color: var(--special-grey);
     background-image: url("../img/map.png");
     background-repeat: no-repeat;
     background-size: auto;
@@ -265,26 +267,28 @@ body {
 }
 
 .reference svg:active {
-    fill: #BDBBBC;
+    fill: var(--special-grey);
 }
 
 /* Hotels Page */
 /* Filters */
 .filters {
+    background-color: var(--basic-blue-hovered);
     background-image: url(../img/filter-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: var(--basic-white);
 }
 
 .filters button {
     border: 1px solid var(--basic-white);
-    background-color: Transparent;
+    background-color: var(--no-fill);
     padding: 8px 36px;
     color: var(--basic-white);
 }
 
 .info-check{
-    padding-left: 1.2em;
+    padding-left: 20px;
 }
 
 .info-check__input {
@@ -296,10 +300,10 @@ body {
 
 .info-check__box {
     position: absolute;
-    width: 1.5em;
-    height: 1.5em;
+    width: 24px;
+    height: 24px;
     background-image: url(../img/checkbox-off.svg);
-    margin-left: -1.2em;
+    margin-left: -20px;
 }
 /* Checked */
 .info-check__input:checked + .info-check__box {
