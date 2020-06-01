@@ -1,3 +1,8 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
 /* Styles for "index.html" */
 
 /* Import custom fonts */
@@ -80,6 +85,12 @@ body {
 
 .menu {
     list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__item {
+
 }
 
 .menu a {
@@ -122,6 +133,35 @@ body {
     font-family: var(--ptsans);
     font-weight: bold;
     font-size: 21px;
+}
+
+.facts {
+    display: flex;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fact-two .fact-info,
+.fact-one .fact-info {
+    background-color: var(--basic-blue-clicked);
+    color: var(--basic-white);
+}
+
+.fact-info {
+    flex-grow: 1;
+}
+
+.promo p {
+    text-align: center;
+}
+
+.fact-image img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
 
 /* Location */
@@ -210,6 +250,12 @@ body {
 
 /* Footer */
 
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .contacts a {
     font-family: var(--ptsans);
     font-weight: bold;
@@ -220,6 +266,13 @@ body {
 
 .social-list {
     list-style: none;
+    display: flex;
+}
+
+.social-list__item a svg {
+    margin: auto;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .social-list__item {
@@ -243,6 +296,11 @@ body {
 
 .social-list__item svg:active {
     fill: var(--basic-white-active)
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
 }
 
 .contacts a:hover {
