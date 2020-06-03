@@ -50,8 +50,8 @@
     <h1 class="visually-hidden">Гостиницы</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
-      <form action="#" method="get">
-        <fieldset>
+      <form class="filters__form" action="#" method="get">
+        <fieldset class="filters__checks">
           <legend>Инфраструктура</legend>
           <!-- Checkbox-off-SVG -->
           <!-- <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
@@ -98,7 +98,7 @@
             Апартаменты
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="filters__range">
           <legend>Стоимость в сутки <span>(P)</span>:</legend>
           <label>
             <span class="visually-hidden">от</span>
@@ -303,51 +303,53 @@
             <a class="item-info__details" href="#">Подробнее</a>
             <a class="item-info__book" href="#">Забронировать</a>
           </div>
-          <ul>
-            <li>
-              <span class="rating-star">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
-                  <path
-                    d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
-                </svg>
-              </span>
-            </li>
-            <li>
-              <span class="rating-star">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
-                  <path
-                    d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
-                </svg>
-              </span>
-            </li>
-            <li>
-              <span class="rating-star">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
-                  <path
-                    d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
-                </svg>
-              </span>
-            </li>
-            <li>
-              <span class="rating-star">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
-                  <path
-                    d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
-                </svg>
-              </span>
-            </li>
-            <li>
-              <span class="rating-star">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
-                  <path
-                    d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
-                </svg>
-              </span>
-            </li>
-          </ul>
-          <p>
-            Рейтинг:<span>9,2</span>
-          </p>
+          <div class="catalog-item__rating item-info">
+            <ul>
+              <li>
+                <span class="rating-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                    <path
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
+                  </svg>
+                </span>
+              </li>
+              <li>
+                <span class="rating-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                    <path
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
+                  </svg>
+                </span>
+              </li>
+              <li>
+                <span class="rating-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                    <path
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
+                  </svg>
+                </span>
+              </li>
+              <li>
+                <span class="rating-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                    <path
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
+                  </svg>
+                </span>
+              </li>
+              <li>
+                <span class="rating-star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                    <path
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
+                  </svg>
+                </span>
+              </li>
+            </ul>
+            <p>
+              Рейтинг:<span>9,2</span>
+            </p>
+          </div>
           </div>
         </li>
       </ul>
