@@ -422,7 +422,7 @@ body {
     display: flex;
 }
 
-.social-list__item a svg {
+.social-list__item svg {
     margin: auto;
     vertical-align: middle;
     display: inline-block;
