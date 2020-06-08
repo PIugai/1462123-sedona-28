@@ -347,9 +347,9 @@ body {
     padding-left: 15px;
     font: inherit;
     background-color: transparent;
-    border: 2px solid var(--basic-grey);
     margin-bottom: 29px;
-    /* position: relative; */
+    border: none;
+    background-color: var(--basic-extra-grey);
 }
 
 .search-form__calendar {
@@ -387,8 +387,27 @@ body {
     padding-left: 15px;
     font: inherit;
     background-color: transparent;
-    border: 2px solid var(--basic-grey);
+    border: none;
+    background-color: var(--basic-extra-grey);
     margin-bottom: 29px;
+}
+
+.search-form__adults {
+    width: 226px;
+    height: 38px;
+    margin-bottom: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.search-form__kids {
+    width: 200px;
+    height: 38px;
+    margin-bottom: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .minus,
@@ -418,22 +437,22 @@ body {
 
 .adults-subtract {
     right: 138px;
-    bottom: 154px;
+    bottom: 177px;
 }
 
 .adults-add {
     right: 65px;
-    bottom: 151px;
+    bottom: 173px;
 }
 
 .kids-subtract {
     left: 173px;
-    bottom: 154px;
+    bottom: 177px;
 }
 
 .kids-add {
     left: 250px;
-    bottom: 151px;
+    bottom: 173px;
 }
 
 .search-form__guests {
@@ -597,6 +616,10 @@ body {
 
 .filter__cost {
     margin-left: auto;
+}
+
+.filter-range {
+
 }
 
 .info-check{
