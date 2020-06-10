@@ -98,30 +98,39 @@
             Апартаменты
           </label>
         </fieldset>
-        <fieldset class="filter__cost">
-          <legend>Стоимость в сутки <span>(P)</span>:</legend>
-          <label>
-            <span class="visually-hidden">от</span>
-            <input type="text" placeholder="от 0" value="0">
-          </label>
-          <label>
-            <span class="visually-hidden">до</span>
-            <input type="text" placeholder="до 3000" value="300">
-          </label>
-          <label>
-            <input type="range" min="0" max="100" value="40" data-popup-enabled="true" data-show-value="true">
-            <!-- Fiter-button -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-              <path opacity=".3" fill="#ABABAB"
-                d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
-              <circle fill="#FFF" cx="10" cy="10" r="10" />
-              <circle fill="#ABABAB" cx="10" cy="10" r="2" />
-            </svg>
-          </label>
-        </fieldset>
-        <button type="submit">
-          Показать
-        </button>
+        <div class="filter__cost">
+          <fieldset class="filter-cost">
+            <legend>Стоимость в сутки <span>(P)</span>:</legend>
+            <div class="filter-cost__group">
+              <label class="filter-cost__prices">
+                <span class="visually-hidden">от</span>
+                <input type="text" placeholder="от 0" value="0">
+              </label>
+              <div class="filter-cost__devider"></div>
+              <label class="filter-cost__prices">
+                <span class="visually-hidden">до</span>
+                <input type="text" placeholder="до 3000" value="300">
+              </label>
+            </div>
+            <label>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar--white"></div>
+                    <div class="bar--grey"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+              </div>
+            </label>
+          </fieldset>
+          <div class="filter-btn">
+            <button class="" type="submit">
+              Показать
+            </button>
+          </div>
+        </div>
       </form>
     </section>
     <section class="catalog">
@@ -180,13 +189,15 @@
             </h3>
             <span>Гостиница</span>
             <span>От 4000 Р.</span>
-            <a class="item-info__details" href="#">Подробнее</a>
-            <a class="item-info__book" href="#">Забронировать</a>
+            <div class="item-info__buttons">
+              <a class="item-info__details" href="#">Подробнее</a>
+              <a class="item-info__book" href="#">Забронировать</a>
+            </div>
           </div>
           <div class="catalog-item__rating">
             <ul>
               <li>
-                <span class="rating-star">
+                <span class="rating-star visually-hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
                     <path
                       d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
@@ -241,13 +252,15 @@
             </h3>
             <span>Мотель</span>
             <span>От 3000 Р.</span>
-            <a class="item-info__details" href="#">Подробнее</a>
-            <a class="item-info__book" href="#">Забронировать</a>
+            <div class="item-info__buttons">
+              <a class="item-info__details" href="#">Подробнее</a>
+              <a class="item-info__book" href="#">Забронировать</a>
+            </div>
           </div>
           <div class="catalog-item__rating">
             <ul>
               <li>
-                <span class="rating-star">
+                <span class="rating-star visually-hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
                     <path
                       d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
@@ -255,7 +268,7 @@
                 </span>
               </li>
               <li>
-                <span class="rating-star">
+                <span class="rating-star visually-hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
                     <path
                       d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
@@ -302,13 +315,15 @@
             </h3>
             <span>Апартаменты</span>
             <span>От 4000 Р.</span>
-            <a class="item-info__details" href="#">Подробнее</a>
-            <a class="item-info__book" href="#">Забронировать</a>
+            <div class="item-info__buttons">
+              <a class="item-info__details" href="#">Подробнее</a>
+              <a class="item-info__book" href="#">Забронировать</a>
+            </div>
           </div>
           <div class="catalog-item__rating item-info">
             <ul>
               <li>
-                <span class="rating-star">
+                <span class="rating-star visually-hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
                     <path
                       d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
@@ -316,7 +331,7 @@
                 </span>
               </li>
               <li>
-                <span class="rating-star">
+                <span class="rating-star visually-hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
                     <path
                       d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
@@ -324,7 +339,7 @@
                 </span>
               </li>
               <li>
-                <span class="rating-star">
+                <span class="rating-star ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
                     <path
                       d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
@@ -332,7 +347,7 @@
                 </span>
               </li>
               <li>
-                <span class="rating-star">
+                <span class="rating-star visually-hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
                     <path
                       d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
