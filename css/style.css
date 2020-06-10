@@ -193,7 +193,7 @@ body {
     width: 470px;
 }
 
-.line2 {
+.inner-line {
     letter-spacing: 0.05rem;
 }
 
@@ -941,6 +941,7 @@ height: 22px;
 .item-info__buttons {
     padding-top: 16px;
 }
+
 .catalog-item__rating {
     margin-left: auto;
     margin-right: 75px;
