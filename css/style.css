@@ -939,7 +939,23 @@ height: 22px;
 }
 
 .item-info__buttons {
-    padding-top: 16px;
+    display: flex;
+}
+
+.item-info__type {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-info__type span,
+.item-info__cost span {
+    margin-bottom: 10px;
+}
+
+.item-info__cost {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
 }
 
 .catalog-item__rating {
