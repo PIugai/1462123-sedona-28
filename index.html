@@ -68,7 +68,7 @@
         </svg>
       </div>
       <p class="promo__desc">
-        Седона – небольшой городок в Аризоне, <span class="inner-line">заслуживащий большего!</span>
+        Седона – небольшой городок в Аризоне, <span class="inner-line">заслуживающий большего!</span>
       </p>
       <p class="promo__text">
         Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
@@ -144,7 +144,7 @@
         <div class="fact__info">
           <h4>Небольшая площадь</h4>
           <span>- №3 -</span>
-          <p>Все достопримечательности находятся близко</p>
+          <p>Все достопримечательности находятся очень близко</p>
         </div>
         <div class="fact__info">
           <h4>Красивая дорога</h4>
@@ -162,7 +162,7 @@
       <h2 class="visually-hidden">Поиск</h2>
       <h3>Заинтересовались?</h3>
       <p>Укажите предпологаемые даты поездки <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a href="#">Поиск гостиницы в Седоне</a>
+      <a href="#" class="search__btn">Поиск гостиницы в Седоне</a>
       <form class="search__form search-form" action="#" method="GET">
         <label for="check-in">Дата заезда:</label>
         <input class="search-form__check-in" id="check-in" type="text" value="24 АПРЕЛЯ 2017">
@@ -184,35 +184,37 @@
               d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
           </svg>
         </button>
-        <div class="search-form__adults">
-          <label for="adults">Взрослые:</label>
-          <button class="adults-subtract minus">
-            <svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
-              <rect width="12" height="3" />
-            </svg>
-          </button>
-          <button class="adults-add add">
-            <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
-            </svg>
-          </button>
-          <input class="search-form__guests" id="adults" type="text" value="2">
-        </div>
-        <div class="search-form__kids">
-          <label for="kids">Дети:</label>
-          <button class="kids-subtract minus">
-            <svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
-              <rect width="12" height="3" />
-            </svg>
-          </button>
-          <button type="button" class="kids-add add">
-            <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
-            </svg>
-          </button>
-          <input class="search-form__guests" id="kids" type="text" value="0">
+        <div class="search-form__amount">
+          <div class="search-form__adults">
+            <label for="adults">Взрослые:</label>
+            <button class="adults-subtract substract">
+              <svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                <rect width="12" height="3" />
+              </svg>
+            </button>
+            <button class="adults-add add">
+              <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
+              </svg>
+            </button>
+            <input class="search-form__guests" id="adults" type="text" value="2">
+          </div>
+          <div class="search-form__kids">
+            <label for="kids">Дети:</label>
+            <button class="kids-subtract substract">
+              <svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                <rect width="12" height="3" />
+              </svg>
+            </button>
+            <button type="button" class="kids-add add">
+              <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
+              </svg>
+            </button>
+            <input class="search-form__guests" id="kids" type="text" value="0">
+          </div>
         </div>
         <button class="search-form__btn" type="submit">Найти</button>
       </form>
@@ -267,6 +269,7 @@
       </a>
     </div>
   </footer>
+  <script src="./js/search.js"></script>
 </body>
 
 </html>

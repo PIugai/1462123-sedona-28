@@ -73,7 +73,7 @@ body {
     height: auto;
   }
 
-/* Index Page */
+/* --------------------------------------------------- Index Page ---------------------------------------------- */
 
 /* Main Elements */
 .page-body {
@@ -81,7 +81,7 @@ body {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     position: relative;
-  }
+}
 
 .main-header,
 .container,
@@ -201,10 +201,6 @@ bottom: 48px;
 width: 460px;
 }
 
-.inner-line {
-    word-spacing: 17px;
-}
-
 .promo__text {
     text-align: center;
 position: relative;
@@ -259,13 +255,10 @@ margin-bottom: 31px;
     margin-bottom: 25px;
     margin-right: auto;
 }
-
-/* .fact__info span {
-    margin-bottom: 10px;
-} */
-
 .fact__info p {
-    margin-top: 25px;
+    margin-top: 23px;
+padding-left: 9px;
+padding-right: 10px;
 }
 
 .facts-list {
@@ -278,12 +271,12 @@ margin-bottom: 31px;
 
 .facts-list .fact__info {
     color: var(--basic-black);
-padding: 40px;
-padding-top: 40px;
-padding-bottom: 40px;
-padding: 40px 350px;
-padding-left: 22px;
-padding-right: 22px;
+    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding: 40px 350px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 
 /* Features Inner Section */
@@ -341,7 +334,7 @@ padding-right: 22px;
 .search h3 {
     font-size: 30px;
     line-height: 24px;
-    padding-top: 26px;
+    padding-top: 28px;
 }
 
 .search a {
@@ -365,10 +358,6 @@ padding-right: 22px;
     color: var(--basic-white-active);
 }
 
-.search form {
-    /* display: none; */
-}
-
 .search__form {
     position: absolute;
     background-color: var(--basic-white);
@@ -379,6 +368,11 @@ padding-right: 22px;
     left: 436px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search-form__amount {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -402,6 +396,7 @@ padding-left: 13px;
     margin-bottom: 29px;
     border: none;
     background-color: var(--basic-extra-grey);
+    margin-left: 16px;
 }
 
 .search-form__calendar {
@@ -474,7 +469,7 @@ margin-left: 21px;
     text-transform: uppercase;
 }
 
-.minus,
+.substract,
 .add {
     position: absolute;
     background-color: transparent;
@@ -482,11 +477,11 @@ margin-left: 21px;
     border: none;
 }
 
-.minus svg:hover {
+.substract svg:hover {
     fill: var(--basic-black);
 }
 
-.minus svg:active {
+.substract svg:active {
     fill: var(--basic-blue);
 }
 
@@ -549,8 +544,6 @@ text-transform: uppercase;
     background-image: url("../img/map.png");
     background-repeat: no-repeat;
     background-size: auto;
-    /* position: absolute; */
-    /* z-index: -1; */
 }
 
 .search__map iframe {
@@ -562,7 +555,6 @@ text-transform: uppercase;
 
 .main-footer {
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     position: absolute;
     z-index: 1;
@@ -711,7 +703,7 @@ margin-top: 5px;
     fill: var(--special-grey);
 }
 
-/* Hotels Page */
+/* ---------------------------------------------------- Hotels Page ------------------------------------------------- */
 /* Filters */
 
 .filter {
@@ -800,6 +792,10 @@ width: 61px;
     border: 0;
 }
 
+.filter-cost legend {
+    font-size: 16px;
+}
+
 .filter-checkbox {
     margin-top: 25px;
 margin-left: 60px;
@@ -880,7 +876,7 @@ font-size: 14px;
     background-repeat: no-repeat;
     margin-top: 1px;
 }
-}
+
 /* Checked */
 .info-check__input:checked + .info-check__box {
     background-image: url(../img/checkbox-on.svg);
@@ -962,9 +958,6 @@ font-size: 14px;
 .catalog-item__rating li {
     padding: 0;
     padding-left: 4px;
-}
-
-.rating-star {
 }
 
 .rating-star svg {
@@ -1185,3 +1178,14 @@ margin-top: 7px;
     margin: -1px;
 }
 
+.search-form {
+    display: none;
+	height: 0;
+	overflow: hidden;
+	transition: height 350ms ease-in-out;
+}
+
+.visible {
+    display: block;
+	height: auto;
+}

@@ -53,17 +53,6 @@
       <form class="filter" action="#" method="get">
         <fieldset class="filter__infrastructure filter-checkbox">
           <legend>Инфраструктура:</legend>
-          <!-- Checkbox-off-SVG -->
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
-            <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
-            <path
-              d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
-          </svg> -->
-          <!-- Checkbox-on-SVG -->
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
-            <path
-              d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
-          </svg> -->
           <label class="info-check option">
             <input class="info-check__input" type="checkbox" name="area" value="Бассейн" checked>
             <span class="info-check__box"></span>
@@ -112,18 +101,16 @@
                 <input type="text" placeholder="до 3000" value="до 3000">
               </label>
             </div>
-            <label>
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar--white"></div>
-                    <div class="bar--grey"></div>
-                  </div>
-                  <div class="toggle toggle-min" tabindex="0"></div>
-                  <div class="toggle toggle-max" tabindex="0"></div>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar--white"></div>
+                  <div class="bar--grey"></div>
                 </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
               </div>
-            </label>
+            </div>
           </fieldset>
           <div class="filter-btn">
             <button class="" type="submit">
@@ -181,7 +168,7 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <div class="catalog-item__image">
-            <img src="./img/amara.jpg" width="135px" height="90" alt="Amara Resort & SPA">
+            <img src="./img/amara.jpg" width="135" height="90" alt="Amara Resort & SPA">
           </div>
           <div class="catalog-item__info item-info">
             <h3>
@@ -240,7 +227,7 @@
         </li>
         <li class="catalog__item">
           <div class="catalog-item__image">
-            <img src="./img/desert.jpg" width="135px" height="90" alt="Desert Quail INN">
+            <img src="./img/desert.jpg" width="135" height="90" alt="Desert Quail INN">
           </div>
           <div class="catalog-item__info item-info">
             <h3>
@@ -291,7 +278,7 @@
         </li>
         <li class="catalog__item">
           <div class="catalog-item__image">
-            <img src="./img/villas.jpg" width="135px" height="90" alt="Villas at Poco Diablo">
+            <img src="./img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           </div>
           <div class="catalog-item__info item-info">
             <h3>
@@ -331,9 +318,9 @@
               Рейтинг:<span>9,2</span>
             </p>
           </div>
-          </div>
         </li>
       </ul>
+    </section>
   </main>
   <footer class="hotels-footer">
     <div class="contacts">
