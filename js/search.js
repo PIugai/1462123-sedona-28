@@ -1,11 +1,12 @@
 const searchForm = document.querySelector('.search-form');
 const searchButton = document.querySelector('.search__btn');
-const searchFormInput = searchForm.querySelectorAll('input');
 const searchFormCheckIn = searchForm.querySelector('.search-form__check-in');
+const searchFormCheckout = searchForm.querySelector('.search-form__check-out');
+const searchFormGuests = searchForm.querySelector('.search-form__guests');
 
 searchButton.addEventListener('click', function(evt) {
   evt.preventDefault();
-  searchForm.classList.toggle('form-show');
+  searchForm.classList.toggle('form-hide');
   searchFormCheckIn.focus();
   if (searchForm.classList.contains('form-error')) {
     evt.preventDefault();
@@ -14,18 +15,25 @@ searchButton.addEventListener('click', function(evt) {
 });
 
 searchForm.addEventListener('submit', function(evt) {
-  if (!searchFormInput.value) {
+  if (
+    !searchFormCheckIn.value ||
+    !searchFormCheckout.value ||
+    !searchFormGuests.value
+  ) {
     evt.preventDefault();
     searchForm.classList.add('form-error');
-    searchForm.offsetWidth = searchForm.offsetWidth;
+    console.log('error');
+  } else {
+    searchForm.classList.remove('form-error');
+    alert('Form sent');
   }
 });
 
 window.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {
-    if (searchForm.classList.contains('form-show')) {
+    if (searchForm.classList.contains('search-form')) {
       evt.preventDefault();
-      searchForm.classList.remove('form-show');
+      searchForm.classList.add('form-hide');
       searchForm.classList.remove('form-error');
     }
   }

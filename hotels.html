@@ -42,7 +42,7 @@
         <li class="site-navigation__item"><a href="#">Информация</a></li>
         <li class="site-navigation__item"><a href="#">Фото и Видео</a></li>
         <li class="site-navigation__item"><a href="#">Карта Штата</a></li>
-        <li class="site-navigation__item"><a href="#">Гостиницы</a></li>
+        <li class="site-navigation__item--selected"><a href="#">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -91,21 +91,20 @@
           <fieldset class="filter-cost">
             <legend>Стоимость в сутки <span>(P)</span>:</legend>
             <div class="filter-cost__group">
-              <label class="filter-cost__prices">
-                <span class="visually-hidden">от</span>
-                <input type="text" placeholder="от 0" value="от 0">
-              </label>
-              <div class="filter-cost__devider"></div>
-              <label class="filter-cost__prices">
-                <span class="visually-hidden">до</span>
-                <input type="text" placeholder="до 3000" value="до 3000">
-              </label>
+              <div class="filter-cost__prices">
+                <label for="cost-low" class="filter-cost__prices">от</label>
+                <input id="cost-low" type="text" placeholder="0" value="0">
+              </div>
+              <div class="filter-cost__prices">
+                <label for="cost-high" class="filter-cost__prices">до</label>
+                <input id="cost-high" type="text" placeholder="3000" value="3000">
+              </div>
             </div>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar--white"></div>
-                  <div class="bar--grey"></div>
+                  <div class="scale__bar--white"></div>
+                  <div class="scale__bar--grey"></div>
                 </div>
                 <div class="toggle toggle-min" tabindex="0"></div>
                 <div class="toggle toggle-max" tabindex="0"></div>
