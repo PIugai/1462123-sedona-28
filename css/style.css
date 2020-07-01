@@ -72,7 +72,7 @@ body {
     text-transform: uppercase;
     background-position: top center;
     background-repeat: no-repeat;
-    background-color: var(--basic-extra-grey);
+    background-color: var(--basic-white);
   }
 
   a {
