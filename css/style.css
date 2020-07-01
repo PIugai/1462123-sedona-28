@@ -53,6 +53,9 @@
     --special-clicked: #503E33;
 
     --ptsans : "PT Sans", Arial, sans-serif;
+
+    --box-shadow: rgba(0, 1, 1, 0.2);
+    --box-shadow-toggle: #cfcfcf;
 }
 
 /* Global */
@@ -69,6 +72,7 @@ body {
     text-transform: uppercase;
     background-position: top center;
     background-repeat: no-repeat;
+    background-color: var(--basic-extra-grey);
   }
 
   a {
@@ -102,7 +106,7 @@ body {
 }
 
 .container {
-    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+    box-shadow: 0px 5px 15px var(--box-shadow);
 }
 
 
@@ -116,6 +120,7 @@ body {
     background-color: var(--basic-white);
     position: relative;
     width: 100%;
+    box-shadow: ;
 }
 
 .logo {
@@ -180,6 +185,7 @@ body {
 
 .main-header {
     margin-bottom: 1px;
+    box-shadow: 0px 5px 15px var(--box-shadow);
 }
 
 /* Hotels Header - selected item */
@@ -434,8 +440,8 @@ body {
     z-index: 3;
     width: 568px;
     padding: 55px;
-    -webkit-box-shadow: 0px 7px 15px rgba(0, 0, 1, 0.15);
-            box-shadow: 0px 7px 15px rgba(0, 0, 1, 0.15);
+    -webkit-box-shadow: 0px 7px 15px var(--box-shadow);
+            box-shadow: 0px 7px 15px var(--box-shadow);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -704,9 +710,9 @@ top: 63px;
     z-index: 1;
     margin-right:auto;
     background-color: var(--basic-white-footer);
-    padding: 17px;
-    margin-top: 1px;
-    margin-left: 133px;
+    padding: 9px 101px;
+    margin-left: auto;
+    box-shadow: 0px 5px 15px var(--box-shadow);
 }
 
 .hotels-footer a:first-of-type{
@@ -715,10 +721,14 @@ top: 63px;
 
 .hotels-footer .contacts {
     text-align: left;
+    padding-top: 9px;
+    padding-bottom: 20px;
+    margin-left: 30px;
 }
 
 .hotels-footer .social-list {
-    margin-left: 164px;
+    margin-left: 163px;
+    padding-top: 18px;
 }
 
 .hotels-footer .reference {
@@ -727,11 +737,11 @@ top: 63px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 16px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 197px;
+    padding-top: 15px;
 }
 
 .contacts a {
@@ -913,8 +923,8 @@ margin-top: 5px;
     border: 8px solid var(--basic-white);
     background-color: var(--special-grey);
     border-radius: 50%;
-    -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
-            box-shadow: 0 2px 1px 0 #cfcfcf;
+    -webkit-box-shadow: 0 2px 1px 0 var(--box-shadow-toggle);
+            box-shadow: 0 2px 1px 0 var(--box-shadow-toggle);
     cursor: pointer;
 }
 
