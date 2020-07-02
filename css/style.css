@@ -767,6 +767,7 @@ top: 63px;
     margin: auto;
     display: inline-block;
     margin-top: 15px;
+    vertical-align: baseline;
 }
 
 .social-list__item:nth-of-type(2) svg {
