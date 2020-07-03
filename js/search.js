@@ -25,7 +25,6 @@ searchForm.addEventListener('submit', function(evt) {
     console.log('error');
   } else {
     searchForm.classList.remove('form-error');
-    alert('Form sent');
   }
 });
 
