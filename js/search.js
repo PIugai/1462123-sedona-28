@@ -4,6 +4,8 @@ const searchFormCheckIn = searchForm.querySelector('.search-form__check-in');
 const searchFormCheckout = searchForm.querySelector('.search-form__check-out');
 const searchFormGuests = searchForm.querySelector('.search-form__guests');
 
+searchForm.classList.remove('form-show');
+
 searchButton.addEventListener('click', function(evt) {
   evt.preventDefault();
   searchForm.classList.toggle('form-show');

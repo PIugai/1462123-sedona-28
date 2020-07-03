@@ -164,9 +164,9 @@
         <h3>Заинтересовались?</h3>
         <p>Укажите предпологаемые даты поездки <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="#" class="search__btn">Поиск гостиницы в Седоне</a>
-        <form class="search__form search-form form-show" action="https://echo.htmlacademy.ru/" method="GET">
+        <form class="search__form search-form form-show" action="https://echo.htmlacademy.ru/" method="get">
           <label for="check-in">Дата заезда:</label>
-          <input class="search-form__check-in" id="check-in" type="text" value="24 АПРЕЛЯ 2017">
+          <input class="search-form__check-in" name="check-in" id="check-in" type="text" value="24 АПРЕЛЯ 2017">
           <button class="search-form__calendar">
             <svg aria-label="Календарь" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
               <path
@@ -176,7 +176,7 @@
             </svg>
           </button>
           <label for="check-out">Дата выезда:</label>
-          <input class="search-form__check-out" id="check-out" type="text" value="4 ИЮЛЯ 2017">
+          <input class="search-form__check-out" name="check-out" id="check-out" type="text" value="4 ИЮЛЯ 2017">
           <button class="search-form__calendar">
             <svg aria-label="Календарь" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
               <path
@@ -199,7 +199,7 @@
                     d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
                 </svg>
               </button>
-              <input class="search-form__guests" id="adults" type="text" value="2">
+              <input class="search-form__guests" name="adults" id="adults" type="text" value="2">
             </div>
             <div class="search-form__kids">
               <label for="kids">Дети:</label>
@@ -214,7 +214,7 @@
                     d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
                 </svg>
               </button>
-              <input class="search-form__guests" id="kids" type="text" value="0">
+              <input class="search-form__guests" name="kids" id="kids" type="text" value="0">
             </div>
           </div>
           <button class="search-form__btn" type="submit">Найти</button>
