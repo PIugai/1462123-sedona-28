@@ -6,7 +6,7 @@ const searchFormGuests = searchForm.querySelector('.search-form__guests');
 
 searchButton.addEventListener('click', function(evt) {
   evt.preventDefault();
-  searchForm.classList.toggle('form-hide');
+  searchForm.classList.toggle('form-show');
   searchFormCheckIn.focus();
   if (searchForm.classList.contains('form-error')) {
     evt.preventDefault();
@@ -33,7 +33,7 @@ window.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {
     if (searchForm.classList.contains('search-form')) {
       evt.preventDefault();
-      searchForm.classList.add('form-hide');
+      searchForm.classList.remove('form-show');
       searchForm.classList.remove('form-error');
     }
   }

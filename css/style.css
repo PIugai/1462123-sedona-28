@@ -85,6 +85,12 @@ body {
   }
 
 /* --------------------------------------------------- Index Page ---------------------------------------------- */
+.page-wrapper {
+    width: 1200px;
+    margin: auto;
+    -webkit-box-shadow: 0px 0px 15px var(--box-shadow);
+            box-shadow: 0px 0px 15px var(--box-shadow);
+}
 
 /* Main Elements */
 .page-body {
@@ -105,11 +111,6 @@ body {
     margin: 0 auto;
 }
 
-.container {
-    box-shadow: 0px 5px 15px var(--box-shadow);
-}
-
-
 /* Main navigation */
 
 .main-nav {
@@ -120,7 +121,6 @@ body {
     background-color: var(--basic-white);
     position: relative;
     width: 100%;
-    box-shadow: ;
 }
 
 .logo {
@@ -138,7 +138,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* justify-content: space-between; */
     padding-top: 14px;
     padding-bottom: 16px;
 }
@@ -185,7 +184,6 @@ body {
 
 .main-header {
     margin-bottom: 1px;
-    box-shadow: 0px 5px 15px var(--box-shadow);
 }
 
 /* Hotels Header - selected item */
@@ -712,7 +710,6 @@ top: 63px;
     background-color: var(--basic-white-footer);
     padding: 9px 101px;
     margin-left: auto;
-    box-shadow: 0px 5px 15px var(--box-shadow);
 }
 
 .hotels-footer a:first-of-type{
@@ -1173,6 +1170,7 @@ margin-top: 5px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    margin-top: 2px;
 }
 
 .catalog-item__rating li {
@@ -1332,6 +1330,7 @@ margin-top: 5px;
 .item-info__type span,
 .item-info__cost span {
     margin-bottom: 10px;
+    font-weight: normal;
 }
 
 .item-info__cost {
@@ -1348,13 +1347,23 @@ margin-top: 5px;
 .catalog-item__rating {
     margin-left: auto;
     margin-right: 72px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .catalog-item__rating p {
     margin:0;
     padding: 0;
-    width: 110px;
+    width: 111px;
     margin-left: auto;
+    margin-top: 45px;
+    padding-bottom: 1px;
+    padding-top: 1px;
 }
 
 .catalog-item__image {
@@ -1426,16 +1435,19 @@ margin-top: 5px;
 }
 
 .search-form {
-    display: block;
-    height: auto;
+    display: none;
+	height: 0;
+    overflow: hidden;
     -webkit-animation: slide-down 0.6s;
             animation: slide-down 0.6s;
 }
 
-.form-hide {
+.form-show {
     display: none;
 	height: 0;
-	overflow: hidden;
+    overflow: hidden;
+    display: block;
+    height: auto;
     -webkit-transition: height 350ms ease-in-out;
     -o-transition: height 350ms ease-in-out;
     transition: height 350ms ease-in-out;
